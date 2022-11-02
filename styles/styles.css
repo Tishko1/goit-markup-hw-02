@@ -4,6 +4,10 @@
   --accent-text-color: #ffffff;
   --primery-bg-color: #2f303a;
   --bg-color: #2196f3;
+  --logo-hover: #188ce8;
+  --accent-up:#000000;
+  --team-background-color:#F5F4FA;
+  --footer-link:rgba(255, 255, 255, 0.6);
 }
 body {
   background-color: var(--accent-text-color);
@@ -22,12 +26,14 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration-line: none;
+  
 }
 .logo:hover {
-  color: #188ce8;
+  color: var(--logo-hover);
 }
 .accent-up {
-  color: #000000;
+  color: var(--accent-up);
 }
 .accent-down {
   color: var(--accent-text-color);
@@ -52,39 +58,44 @@ body {
   line-height: 1.16;
   text-align: center;
 }
+.title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--team-background-color);
   text-align: center;
 }
-.team-connect {
-  font-size: 16px;
-  line-height: 1.19;
-}
-.title {
+.team-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
-.portfolio-content {
+.team-connect {
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.19;
 }
 .portfolio-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
-  line-height: 2px;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
-
+.portfolio-content {
+  font-size: 16px;
+  line-height: 1.88;
+}
 .button {
   font-family: inherit;
   cursor: pointer;
 }
 .hero .button:hover,
 .hero .button:focus {
-  background-color: #188ce8;
+  background-color: var(--logo-hover);
 }
 .button.primery {
   background-color: var(--bg-color);
@@ -96,7 +107,7 @@ body {
   letter-spacing: 0.06em;
 }
 .button.secondary {
-  background-color: #f5f4fa;
+  background-color: var(--team-background-color);
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -109,6 +120,7 @@ body {
 }
 .link {
   color: var(--title-text-color);
+  text-decoration-line: none;
 }
 .link:hover,
 .footer .link:hover {
@@ -143,7 +155,7 @@ body {
 }
 
 .footer .link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-link);
 }
 .addr.link {
   color: var(--accent-text-color);
